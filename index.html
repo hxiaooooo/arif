@@ -703,5 +703,23 @@
     const pcNav = document.querySelector("#pc-nav");
     const mobileNav = document.querySelector("#mobile-nav");
     mobileNav.innerHTML = pcNav.innerHTML;
+
+    const menuCheckbox = document.getElementById("menu-checkbox");
+
+    function disableScroll(event) {
+      event.preventDefault();
+    }
+
+    function toggleScroll() {
+      if (menuCheckbox.checked) {
+        window.addEventListener("wheel", disableScroll, { passive: false });
+        window.addEventListener("touchmove", disableScroll, { passive: false });
+      } else {
+        window.removeEventListener("wheel", disableScroll);
+        window.removeEventListener("touchmove", disableScroll);
+      }
+    }
+
+    menuCheckbox.addEventListener("change", toggleScroll);
   </script>
 </html>
