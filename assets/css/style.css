@@ -63,6 +63,9 @@ button {
   min-width: 170px;
   height: 62px;
 
+  border: none;
+  outline: none;
+
   color: #fdfdfd;
   background: var(--primary-purple);
 

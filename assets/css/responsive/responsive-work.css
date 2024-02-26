@@ -74,10 +74,6 @@
     line-height: 1.75;
   }
 
-  .work-item__link:hover {
-    border-bottom-color: transparent;
-  }
-
   .work-item__img-block {
     width: 122px;
     height: 93px;
