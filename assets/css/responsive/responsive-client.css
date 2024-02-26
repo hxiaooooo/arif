@@ -52,9 +52,14 @@
     row-gap: 30px;
   }
 
-  .client__info-block--lat,
+  .client__info-block--lat {
+    grid-template-columns: auto auto;
+    column-gap: 68px;
+  }
+
   .client__info-block--rab {
-    column-gap: 0;
+    grid-template-columns: auto auto;
+    column-gap: 36px;
   }
 }
 
@@ -73,12 +78,10 @@
   }
 
   .client__info-block--lat {
-    grid-template-columns: auto auto;
     column-gap: 60px;
   }
 
   .client__info-block--rab {
-    grid-template-columns: auto auto;
     column-gap: 30px;
   }
 }
