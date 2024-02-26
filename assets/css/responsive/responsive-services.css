@@ -1,0 +1,67 @@
+/* PC */
+@media screen and (min-width: 992px) {
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+  .services {
+    margin-top: 120px;
+  }
+
+  .services__heading {
+    font-size: 3.6rem;
+    line-height: 1.17; /* 116.667% */
+  }
+
+  .services__desc {
+    width: 350px;
+    color: #51586a;
+    font-family: "DM Sans";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.6rem; /* 162.5% */
+  }
+
+  .services-item {
+    flex-direction: column;
+
+    margin: 0 15px;
+    padding: 29px 50px;
+
+    background: #fbfaff;
+
+    height: 100%;
+  }
+
+  .services-item__title a {
+    margin-top: 30px;
+
+    font-size: 2.8rem;
+    line-height: 1.29;
+  }
+
+  .services-item__desc {
+    width: auto;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 576px) {
+  .services-item.item-2,
+  .services-item.item-3 {
+    display: none;
+  }
+
+  .services__slider {
+    display: block;
+  }
+}

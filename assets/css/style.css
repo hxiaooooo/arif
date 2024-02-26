@@ -44,7 +44,7 @@ button {
 .section-heading {
   color: var(--primary-black);
 
-  font-size: 4.2rem;
+  font-size: 5.6rem;
   font-weight: 500;
 
   line-height: 1.19;
@@ -54,6 +54,8 @@ button {
   color: var(--primary-gray);
 
   font-size: 1.8rem;
+  font-weight: 400;
+
   line-height: 1.67; /* 166.667% */
 }
 
