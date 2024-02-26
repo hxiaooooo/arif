@@ -83,31 +83,134 @@
       content="./assets/favicon/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ffffff" />
+
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- Fonts (DM Sans)-->
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
+
     <!-- Grid -->
     <link rel="stylesheet" href="./assets/css/grid.css" />
+
     <!-- Style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Components -->
+
     <link rel="stylesheet" href="./assets/css/components/header.css" />
-    <link rel="stylesheet" href="./assets/css/components/hero.css" />
+    <link rel="stylesheet" href="./assets/css/components/mobile-header.css" />
+
     <!-- Responsive -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/responsive/responsive-header.css"
+    />
   </head>
+
   <body style="height: 10000px">
-    <!-- Header -->
+    <!-- PC Header -->
     <header class="header">
       <!-- Header container -->
       <div class="header__container">
         <!-- Inner -->
         <navbar class="navbar">
+          <!-- Logo block -->
+          <div class="pc-navbar">
+            <a href="#" class="logo-block">
+              <!-- Logo-image block -->
+              <div class="logo__img-block">
+                <img src="./assets/img/logo.svg" alt="Arif" class="logo__img" />
+              </div>
+
+              <!-- Logo-name block -->
+              <div class="logo__name-block">hi@arif.interactive</div>
+            </a>
+
+            <!-- Emoji -->
+            <div class="header__emoji-block">
+              <img
+                src="./assets/img/header-01.png"
+                alt=""
+                class="header__emoji"
+              />
+            </div>
+
+            <!-- Navbar list -->
+            <ul id="pc-nav" class="navbar__list">
+              <li>
+                <a href="#!" class="navbar__link">Projects</a>
+              </li>
+              <li>
+                <a href="#!" class="navbar__link">Journey</a>
+              </li>
+              <li>
+                <a href="#!" class="navbar__link">Service</a>
+              </li>
+              <li>
+                <a href="#!" class="navbar__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Table / Mobile menu -->
+          <div class="mobile-navbar">
+            <!-- Emoji block -->
+            <div class="header__emoji-block--small">
+              <img
+                src="./assets/img/header-01-small.png"
+                alt=""
+                class="header__emoji--small"
+              />
+            </div>
+
+            <!-- Mobile navbar (right section) -->
+            <div class="mobile-navbar--right">
+              <!-- Image block -->
+              <div class="logo__img-block--outside">
+                <img
+                  src="./assets/img/logo.svg"
+                  alt="Arif"
+                  class="logo__img--outside"
+                />
+              </div>
+
+              <!-- Toggle menu -->
+              <label for="menu-checkbox" class="toggle-menu">
+                <div class="icon-box">
+                  <span class="icon-line"></span>
+                  <span class="icon-line"></span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </navbar>
+      </div>
+    </header>
+
+    <!-- Tablet/Mobile Headee -->
+    <div class="mobile-header">
+      <input
+        type="checkbox"
+        name=""
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+      <!-- Menu overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+
+      <!-- Menu content -->
+      <div class="menu-drawer">
+        <!-- Row -->
+        <div class="menu-drawer__row">
           <!-- Logo block -->
           <a href="#" class="logo-block">
             <!-- Logo-image block -->
@@ -119,32 +222,54 @@
             <div class="logo__name-block">hi@arif.interactive</div>
           </a>
 
-          <!-- Emoji -->
-          <div class="header__emoji-block">
-            <img
-              src="./assets/img/header-01.png"
-              alt=""
-              class="header__emoji"
-            />
-          </div>
+          <label for="menu-checkbox" class="menu-drawer__close">X</label>
+        </div>
 
-          <!-- Navbar list -->
-          <ul class="navbar__list">
-            <li>
-              <a href="#!" class="navbar__link">Projects</a>
-            </li>
-            <li>
-              <a href="#!" class="navbar__link">Journey</a>
-            </li>
-            <li>
-              <a href="#!" class="navbar__link">Service</a>
-            </li>
-            <li>
-              <a href="#!" class="navbar__link">Contact</a>
-            </li>
-          </ul>
-        </navbar>
+        <!-- Navigation -->
+        <ul id="mobile-nav"></ul>
+
+        <!-- Seperate line -->
+        <div class="seperate-line"></div>
+
+        <!-- Social -->
+        <ul class="mobile-nav" class="navbar__list">
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/trthtuz"
+              class="navbar__link"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/trthtuz"
+              class="navbar__link"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a href="mailto:justinpg.2005@gmail.com" class="navbar__link"
+              >Gmail: justinpg.2005@gmail.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+16262232647" class="navbar__link"
+              >Phone: +1 (626-223-2647)</a
+            >
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
+
+    <main></main>
   </body>
+  <script>
+    const pcNav = document.querySelector("#pc-nav");
+    const mobileNav = document.querySelector("#mobile-nav");
+    mobileNav.innerHTML = pcNav.innerHTML;
+  </script>
 </html>
