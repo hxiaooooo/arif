@@ -40,3 +40,31 @@ button {
   color: inherit;
   font-family: inherit;
 }
+
+.section-desc {
+  color: var(--primary-gray);
+
+  font-size: 1.8rem;
+  line-height: 1.67; /* 166.667% */
+}
+
+.btn {
+  min-width: 170px;
+  height: 62px;
+
+  color: #fdfdfd;
+  background: var(--primary-purple);
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+
+  line-height: 62px;
+
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

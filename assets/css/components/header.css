@@ -1,6 +1,8 @@
 .header {
   position: sticky;
   top: -20px;
+  z-index: 100;
+
   padding: 20px 0 0;
 
   background: white;
@@ -140,6 +142,8 @@
   justify-content: center;
 
   row-gap: 6px;
+
+  cursor: pointer;
 }
 
 .icon-line {

@@ -85,12 +85,19 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Preconnect -->
+    <link rel="preconnect" href="https://unpkg.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Fonts (DM Sans)-->
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
 
@@ -107,12 +114,14 @@
 
     <link rel="stylesheet" href="./assets/css/components/header.css" />
     <link rel="stylesheet" href="./assets/css/components/mobile-header.css" />
+    <link rel="stylesheet" href="./assets/css/components/hero.css" />
 
     <!-- Responsive -->
     <link
       rel="stylesheet"
       href="./assets/css/responsive/responsive-header.css"
     />
+    <link rel="stylesheet" href="./assets/css/responsive/responsive-hero.css" />
   </head>
 
   <body style="height: 10000px">
@@ -174,13 +183,13 @@
             <!-- Mobile navbar (right section) -->
             <div class="mobile-navbar--right">
               <!-- Image block -->
-              <div class="logo__img-block--outside">
+              <a href="#" class="logo__img-block--outside">
                 <img
                   src="./assets/img/logo.svg"
                   alt="Arif"
                   class="logo__img--outside"
                 />
-              </div>
+              </a>
 
               <!-- Toggle menu -->
               <label for="menu-checkbox" class="toggle-menu">
@@ -195,7 +204,7 @@
       </div>
     </header>
 
-    <!-- Tablet/Mobile Headee -->
+    <!-- Tablet/Mobile Header -->
     <div class="mobile-header">
       <input
         type="checkbox"
@@ -265,7 +274,94 @@
       </div>
     </div>
 
-    <main></main>
+    <!-- Main -->
+    <main>
+      <section class="hero">
+        <!-- Container -->
+        <div class="container">
+          <!-- Row -->
+          <div class="row">
+            <!-- Column -->
+            <div class="col-lg-6 g-lg-0 col-12">
+              <!-- Hero media -->
+              <div class="hero-media">
+                <figure class="hero__img-block">
+                  <img
+                    src="./assets/img/hero-01.png"
+                    alt=""
+                    class="hero__img"
+                  />
+                </figure>
+
+                <img
+                  src="./assets/icon/hero-layer-decor-01.svg"
+                  alt=""
+                  class="hero-media__layer"
+                />
+
+                <img
+                  src="./assets/icon/hero-layer-decor-03.svg"
+                  alt=""
+                  class="hero-media__layer--small"
+                />
+              </div>
+            </div>
+
+            <!-- Column -->
+            <div class="col-lg-6 g-lg-0 col-12">
+              <!-- Hero content -->
+              <section class="hero-content">
+                <!-- Title -->
+                <h1 class="hero__title">An Interactive Designer</h1>
+
+                <!-- Desc -->
+                <p class="section-desc hero__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                  urna, non nisl tincidunt ut elementum turpis.
+                </p>
+
+                <!-- Hero CTA block -->
+                <div class="hero__cta-block">
+                  <a href="#!" class="hero__cta btn">Book a Call</a>
+                  <a href="#!" class="hero__works">My Works</a>
+                </div>
+
+                <!-- Social block -->
+                <div class="hero-social__row">
+                  <!-- Follow text -->
+                  <span class="hero__follow">Follow me on:</span>
+
+                  <!-- Hero social block -->
+                  <div class="hero-social">
+                    <!-- Facebook -->
+                    <div class="hero-social__icon-block">
+                      <i class="bx bxl-facebook"></i>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="hero-social__icon-block">
+                      <i class="bx bxl-instagram"></i>
+                    </div>
+
+                    <!-- Tiktok -->
+                    <div class="hero-social__icon-block">
+                      <i class="bx bxl-tiktok"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Layer -->
+                <img
+                  src="./assets/icon/hero-layer-decor-02.svg"
+                  alt=""
+                  class="hero-content__layer"
+                />
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
   <script>
     const pcNav = document.querySelector("#pc-nav");

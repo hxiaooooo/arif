@@ -1,0 +1,146 @@
+/* Hero main */
+.hero {
+  margin-top: 44px;
+}
+/* Hero media */
+.hero-media {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hero-media__layer--small {
+  display: none;
+}
+
+.hero__img-block {
+  position: relative;
+  z-index: 1;
+
+  width: 514px;
+  height: 705px;
+}
+
+.hero__img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.hero-media__layer {
+  position: absolute;
+
+  bottom: 0;
+  left: -201.4px;
+}
+/* Hero content */
+.hero-content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 137px;
+  padding-left: 97.5px;
+
+  height: 100%;
+}
+
+.hero__title {
+  color: var(--primary-black);
+
+  width: 500px;
+
+  font-size: 8rem;
+  font-weight: 500;
+
+  line-height: 0.95; /* 95% */
+}
+
+.hero__desc {
+  margin-top: 20px;
+
+  width: 370px;
+}
+
+.hero__cta-block {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+
+  margin-top: 50px;
+}
+
+.hero__works {
+  border-bottom: 2px solid transparent;
+
+  color: var(--primary-black);
+
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  line-height: 1.67;
+  transition: all 0.2s;
+}
+
+.hero__works:hover {
+  border-bottom-color: currentColor;
+}
+
+/* Hero social */
+.hero-social__row {
+  display: flex;
+  align-items: center;
+
+  column-gap: 15px;
+
+  margin-top: 109px;
+}
+
+.hero__follow {
+  color: var(--primary-gray);
+  font-weight: 500;
+  line-height: 1.875; /* 187.5% */
+}
+
+.hero-social {
+  display: flex;
+  align-items: center;
+
+  column-gap: 20px;
+}
+
+.hero-social__icon-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--primary-black);
+  border-radius: 50%;
+
+  width: 40px;
+  height: 40px;
+
+  color: var(--primary-black);
+  font-size: 1.8rem;
+
+  transition: all 0.2s;
+}
+
+.hero-social__icon-block:hover {
+  background: var(--primary-black);
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.hero-content__layer {
+  position: absolute;
+  z-index: -1;
+
+  bottom: 0;
+  right: 10px;
+}
