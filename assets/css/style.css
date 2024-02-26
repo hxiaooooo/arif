@@ -41,6 +41,15 @@ button {
   font-family: inherit;
 }
 
+.section-heading {
+  color: var(--primary-black);
+
+  font-size: 4.2rem;
+  font-weight: 500;
+
+  line-height: 1.19;
+}
+
 .section-desc {
   color: var(--primary-gray);
 
