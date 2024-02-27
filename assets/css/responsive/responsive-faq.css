@@ -42,6 +42,9 @@
 
 /* Phone */
 @media screen and (max-width: 576px) {
+  .faq-item__desc {
+    width: 316px;
+  }
   .faq__title-block {
     margin-left: 15px;
     margin-right: 54px;
@@ -97,6 +100,10 @@
   .faq__heading {
     width: 80%;
     font-size: 3rem;
+  }
+
+  .faq-item__desc {
+    width: auto;
   }
 
   .faq-item:has(.faq-checkbox:checked) {

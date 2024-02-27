@@ -1,0 +1,88 @@
+/* PC */
+@media screen and (min-width: 992px) {
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+  .gallery__heading {
+    font-size: 4rem;
+  }
+
+  .gallery__list {
+    margin: 60px 14px 0;
+  }
+
+  .gallery__link {
+    font-size: 2.8rem;
+  }
+  .gallery-item.item-1,
+  .gallery-item.item-3 {
+    display: none;
+  }
+
+  .gallery-item {
+    padding-top: 142.89777%;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 576px) {
+  .gallery {
+    margin-top: 120px;
+  }
+
+  .gallery__title-block {
+    margin: 0 20px;
+  }
+
+  .gallery__heading {
+    font-size: 3.6rem;
+  }
+
+  .gallery__desc {
+    width: 350px;
+
+    font-size: 1.6rem;
+  }
+
+  .gallery__link {
+    margin-top: 10px;
+    border: none;
+
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    line-height: 2;
+  }
+
+  .gallery__dots-block .dots {
+    width: 14px;
+    height: 14px;
+  }
+
+  .gallery__dots-block .dots.active {
+    width: 16px;
+    height: 16px;
+  }
+
+  .gallery__dots-block .dots.active .inner {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Very small screen */
+@media screen and (max-width: 410px) {
+  .gallery__desc {
+    width: auto;
+  }
+}

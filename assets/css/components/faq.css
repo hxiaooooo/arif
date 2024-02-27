@@ -58,6 +58,8 @@
   position: absolute;
   bottom: -196px;
 
+  width: 487px;
+
   opacity: 0;
   visibility: hidden;
   /* translate: 0 -196px; */
@@ -99,7 +101,7 @@
 }
 
 .faq-checkbox:checked ~ .faq-item__desc {
-  bottom: 46px;
+  bottom: 23px;
 
   opacity: 1;
   visibility: visible;
