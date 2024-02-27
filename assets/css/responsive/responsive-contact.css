@@ -1,0 +1,87 @@
+/* PC (1200px) */
+@media screen and (max-width: 1200px) {
+  .contact__layer.layer-01,
+  .contact__layer.layer-02 {
+    display: none;
+  }
+}
+/* PC */
+@media screen and (min-width: 992px) {
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+  .contact__layer.layer-03 {
+    display: none;
+  }
+
+  .contact__layer--small {
+    display: block;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+  .contact__heading {
+    margin-top: 10px;
+
+    width: 400px;
+
+    font-size: 4rem;
+  }
+
+  .contact__desc {
+    margin-top: 10px;
+
+    width: 400px;
+
+    font-size: 1.6rem;
+  }
+
+  .contact__emoji-block {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 576px) {
+  .contact__inner {
+    margin: 0 -5px;
+    padding: 36px 22px 35px;
+  }
+
+  .contact__heading {
+    width: 215px;
+
+    font-size: 3.6rem;
+    letter-spacing: -0.144rem;
+  }
+
+  .contact__emoji-block {
+    width: 48px;
+    height: 48px;
+  }
+
+  .contact__desc {
+    width: 300px;
+  }
+
+  .contact__cta {
+    width: 147px;
+    height: 55px;
+
+    line-height: 55px;
+  }
+}
+
+/* Very small screen */
+@media screen and (max-width: 420px) {
+  .contact__desc {
+    width: auto;
+  }
+}

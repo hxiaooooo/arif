@@ -69,7 +69,7 @@
 }
 
 /* Very small screen */
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 420px) {
   .feedback__desc,
   .feedback__speech {
     width: 300px;

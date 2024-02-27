@@ -17,7 +17,7 @@
   }
 
   .gallery__list {
-    margin: 60px 14px 0;
+    margin: 60px 0 0;
   }
 
   .gallery__link {
@@ -66,6 +66,10 @@
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
     line-height: 2;
+  }
+
+  .gallery__list {
+    margin: 60px 14px 0;
   }
 
   .gallery__dots-block .dots {

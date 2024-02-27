@@ -92,7 +92,7 @@
 }
 
 /* Very small screen */
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 420px) {
   .faq-item:has(.faq-checkbox:checked) .faq-item__question-block {
     margin-bottom: 150px;
   }
