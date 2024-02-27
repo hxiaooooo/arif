@@ -1,6 +1,7 @@
 /* Feedback main */
 .feedback {
   position: relative;
+  z-index: -1;
 
   margin-top: -323px;
   padding: 473px 0 74px;
