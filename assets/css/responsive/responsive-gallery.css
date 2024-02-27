@@ -31,6 +31,10 @@
   .gallery-item {
     padding-top: 142.89777%;
   }
+
+  .gallery__dots-block {
+    display: flex;
+  }
 }
 
 /* Phone */

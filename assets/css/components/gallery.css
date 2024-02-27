@@ -54,7 +54,7 @@
 
 /* Slider */
 .gallery__dots-block {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 
@@ -66,8 +66,8 @@
 .gallery__dots-block .dots {
   border-radius: 50%;
 
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 
   background: #08041533;
 }
@@ -79,8 +79,8 @@
 
   border: 1px solid var(--primary-purple);
 
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 
   background: transparent;
 }
@@ -88,8 +88,8 @@
 .gallery__dots-block .dots.active .inner {
   border-radius: 50%;
 
-  width: 18px;
-  height: 18px;
+  width: 13px;
+  height: 13px;
 
   background: var(--primary-purple);
 }
