@@ -1,0 +1,122 @@
+/* FAQ main */
+.faq {
+  margin-top: 95px;
+}
+
+.faq__row {
+  row-gap: 60px;
+}
+
+.faq__heading {
+  width: 575px;
+  margin-bottom: 80px;
+}
+
+/* FAQ List */
+
+/* FAQ Item */
+
+.faq-item {
+  position: relative;
+
+  padding-left: 22px;
+  padding-bottom: 11px;
+
+  border-bottom: 2px solid currentColor;
+
+  color: var(--primary-black);
+}
+
+.faq-item__question-block {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+.faq__question {
+  position: relative;
+  z-index: 2;
+
+  color: currentColor;
+  background: #fff;
+
+  font-size: 3.2rem;
+  font-weight: 500;
+
+  line-height: 1.25; /* 125% */
+}
+
+.faq__question:hover {
+  text-decoration: underline;
+}
+
+.faq-item__desc {
+  position: absolute;
+  bottom: -196px;
+
+  opacity: 0;
+  visibility: hidden;
+  /* translate: 0 -196px; */
+}
+
+/* Label */
+.faq__label {
+  position: relative;
+
+  border: 2px solid #08041533;
+  border-radius: 50%;
+
+  width: 50px;
+  height: 50px;
+
+  cursor: pointer;
+}
+
+.faq__label::after {
+  content: "-";
+
+  position: absolute;
+  right: 50%;
+  top: 50%;
+
+  display: inline-block;
+
+  color: currentColor;
+
+  font-size: 3rem;
+  line-height: 0;
+
+  translate: 50% 50%;
+}
+
+/* Checkbox */
+.faq-item:has(.faq-checkbox:checked) .faq-item__question-block {
+  margin-bottom: 80px;
+}
+
+.faq-checkbox:checked ~ .faq-item__desc {
+  bottom: 46px;
+
+  opacity: 1;
+  visibility: visible;
+
+  /* transform: translateY(126px); */
+}
+
+.faq-checkbox:checked ~ .faq-item__question-block .faq__label {
+  border-color: #5d3bee33;
+}
+
+.faq-item:has(.faq-checkbox:checked) .faq__label::after {
+  content: "+";
+}
+
+.faq-item:has(.faq-checkbox:checked) {
+  color: var(--primary-purple);
+}
+
+/* Transition */
