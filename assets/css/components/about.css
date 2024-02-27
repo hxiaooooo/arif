@@ -1,5 +1,7 @@
 /* About main */
 .about {
+  position: relative;
+  z-index: 2;
   margin-top: 140px;
 }
 

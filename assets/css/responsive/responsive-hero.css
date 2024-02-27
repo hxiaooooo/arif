@@ -2,7 +2,7 @@
 @media screen and (min-width: 992px) {
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .hero__title {
     width: 350px;
   }

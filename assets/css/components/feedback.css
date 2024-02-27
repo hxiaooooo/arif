@@ -1,0 +1,145 @@
+/* Feedback main */
+.feedback {
+  position: relative;
+
+  margin-top: -323px;
+  padding: 473px 0 74px;
+
+  background: #fbfaff;
+  overflow: hidden;
+}
+
+.feedback__inner,
+.feedback-customer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback__inner {
+  text-align: center;
+}
+
+/* Desc */
+.feedback__desc {
+  margin-top: 20px;
+
+  width: 570px;
+}
+
+/* Customer block */
+.feedback-customer {
+  margin-top: 60px;
+}
+
+.feedback__speech {
+  width: 679px;
+
+  color: var(--primary-gray);
+
+  font-size: 2.4rem;
+  line-height: 1.67; /* 166.667% */
+}
+
+.feedback-info__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  row-gap: 3px;
+
+  margin-top: 36px;
+}
+
+.feedback-info {
+  display: flex;
+  align-items: center;
+
+  column-gap: 15.2px;
+}
+
+.feedback__avatar {
+  width: 39.833px;
+  height: 39.833px;
+
+  object-fit: cover;
+}
+
+.feedback__name {
+  color: var(--primary-black);
+
+  font-size: 3rem;
+  font-weight: 500;
+
+  line-height: 1.34; /* 133.333% */
+}
+
+.feedback__occupation {
+  font-size: 1.6rem;
+  line-height: 1.8125;
+}
+
+/* Slider */
+.feedback__dots-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 20.5px;
+
+  margin-top: 40px;
+}
+
+.feedback__dots-block .dots {
+  border-radius: 50%;
+
+  width: 12px;
+  height: 12px;
+
+  background: #08041533;
+}
+
+.feedback__dots-block .dots.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--primary-purple);
+
+  width: 16px;
+  height: 16px;
+
+  background: transparent;
+}
+
+.feedback__dots-block .dots.active .inner {
+  border-radius: 50%;
+
+  width: 10px;
+  height: 10px;
+
+  background: var(--primary-purple);
+}
+
+/* Layer */
+.feedback__layer,
+.feedback__layer--small {
+  position: absolute;
+}
+
+.feedback__layer.layer-01,
+.feedback__layer--small.layer-01 {
+  bottom: 0;
+  left: 0;
+}
+
+.feedback__layer.layer-02,
+.feedback__layer--small.layer-02 {
+  bottom: 0;
+  right: 0;
+}
+
+.feedback__layer--small.layer-01,
+.feedback__layer-02--small {
+  display: none;
+}
