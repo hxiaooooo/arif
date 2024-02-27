@@ -67,6 +67,10 @@
   line-height: 1.25; /* 125% */
 }
 
+.work-item__title:hover {
+  text-decoration: underline;
+}
+
 .work-item__desc {
   margin-top: 10px;
 

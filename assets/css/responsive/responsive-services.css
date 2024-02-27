@@ -13,7 +13,7 @@
 /* Mobile */
 @media screen and (max-width: 767.98px) {
   .services {
-    margin-top: 120px;
+    padding-top: 120px;
   }
 
   .services__heading {

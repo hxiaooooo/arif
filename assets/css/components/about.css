@@ -2,7 +2,7 @@
 .about {
   position: relative;
   z-index: 2;
-  margin-top: 140px;
+  padding-top: 140px;
 }
 
 /* Title block */

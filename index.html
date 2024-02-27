@@ -123,6 +123,7 @@
     <link rel="stylesheet" href="./assets/css/components/faq.css" />
     <link rel="stylesheet" href="./assets/css/components/gallery.css" />
     <link rel="stylesheet" href="./assets/css/components/contact.css" />
+    <link rel="stylesheet" href="./assets/css/components/footer.css" />
 
     <!-- Responsive -->
     <link
@@ -156,9 +157,13 @@
       rel="stylesheet"
       href="./assets/css/responsive/responsive-contact.css"
     />
+    <link
+      rel="stylesheet"
+      href="./assets/css/responsive/responsive-footer.css"
+    />
   </head>
 
-  <body style="height: 10000px">
+  <body>
     <!-- PC Header -->
     <header class="header">
       <!-- Header container -->
@@ -189,16 +194,16 @@
             <!-- Navbar list -->
             <ul id="pc-nav" class="navbar__list">
               <li>
-                <a href="#!" class="navbar__link">Projects</a>
+                <a href="#projects" class="navbar__link">Projects</a>
               </li>
               <li>
-                <a href="#!" class="navbar__link">Journey</a>
+                <a href="#journey" class="navbar__link">Journey</a>
               </li>
               <li>
-                <a href="#!" class="navbar__link">Service</a>
+                <a href="#service" class="navbar__link">Service</a>
               </li>
               <li>
-                <a href="#!" class="navbar__link">Contact</a>
+                <a href="#contact" class="navbar__link">Contact</a>
               </li>
             </ul>
           </div>
@@ -611,7 +616,7 @@
       </section>
 
       <!-- Services -->
-      <section class="services">
+      <section id="service" class="services">
         <div class="container">
           <!-- Title block -->
           <div class="row">
@@ -723,7 +728,7 @@
       </section>
 
       <!-- Work -->
-      <section class="work">
+      <section id="projects" class="work">
         <div class="container">
           <!-- Title block -->
           <div class="row">
@@ -750,7 +755,9 @@
                 <article class="work-item">
                   <!-- Content block -->
                   <div class="work-item__content-block">
-                    <h3 class="work-item__title">Wally Website</h3>
+                    <h3 class="work-item__title">
+                      <a href="#!"> Wally Website </a>
+                    </h3>
                     <div class="section-desc work-item__desc">
                       Lorem ipsum dolor amet, consectetur adipiscing st elit.
                     </div>
@@ -759,11 +766,13 @@
 
                   <!-- Image block -->
                   <figure class="work-item__img-block">
-                    <img
-                      src="./assets/img/work-01.png"
-                      alt=""
-                      class="work-item__img"
-                    />
+                    <a href="#!">
+                      <img
+                        src="./assets/img/work-01.png"
+                        alt=""
+                        class="work-item__img"
+                      />
+                    </a>
                   </figure>
 
                   <img
@@ -786,7 +795,9 @@
                 <article class="work-item">
                   <!-- Content block -->
                   <div class="work-item__content-block">
-                    <h3 class="work-item__title">Banking App</h3>
+                    <h3 class="work-item__title">
+                      <a href="#!">Banking App</a>
+                    </h3>
                     <div class="section-desc work-item__desc">
                       Lorem ipsum dolor amet, consectetur adipiscing st elit.
                     </div>
@@ -795,11 +806,13 @@
 
                   <!-- Image block -->
                   <figure class="work-item__img-block">
-                    <img
-                      src="./assets/img/work-02.png"
-                      alt=""
-                      class="work-item__img"
-                    />
+                    <a href="#!">
+                      <img
+                        src="./assets/img/work-02.png"
+                        alt=""
+                        class="work-item__img"
+                      />
+                    </a>
                   </figure>
 
                   <img
@@ -822,7 +835,9 @@
                 <article class="work-item">
                   <!-- Content block -->
                   <div class="work-item__content-block">
-                    <h3 class="work-item__title">Web App</h3>
+                    <h3 class="work-item__title">
+                      <a href="#!">Web App</a>
+                    </h3>
                     <div class="section-desc work-item__desc">
                       Lorem ipsum dolor amet, consectetur adipiscing st elit.
                     </div>
@@ -831,11 +846,13 @@
 
                   <!-- Image block -->
                   <figure class="work-item__img-block">
-                    <img
-                      src="./assets/img/work-03.png"
-                      alt=""
-                      class="work-item__img"
-                    />
+                    <a href="#!">
+                      <img
+                        src="./assets/img/work-03.png"
+                        alt=""
+                        class="work-item__img"
+                      />
+                    </a>
                   </figure>
 
                   <img
@@ -858,7 +875,9 @@
                 <article class="work-item">
                   <!-- Content block -->
                   <div class="work-item__content-block">
-                    <h3 class="work-item__title">Oculus Website</h3>
+                    <h3 class="work-item__title">
+                      <a href="#!">Oculus Website</a>
+                    </h3>
                     <div class="section-desc work-item__desc">
                       Lorem ipsum dolor amet, consectetur adipiscing st elit.
                     </div>
@@ -867,11 +886,13 @@
 
                   <!-- Image block -->
                   <figure class="work-item__img-block">
-                    <img
-                      src="./assets/img/work-04.png"
-                      alt=""
-                      class="work-item__img"
-                    />
+                    <a href="#!">
+                      <img
+                        src="./assets/img/work-04.png"
+                        alt=""
+                        class="work-item__img"
+                      />
+                    </a>
                   </figure>
 
                   <img
@@ -901,7 +922,7 @@
       </section>
 
       <!-- About -->
-      <section class="about">
+      <section id="journey" class="about">
         <!--  -->
         <div class="container">
           <div class="row">
@@ -1315,7 +1336,7 @@
       </section>
 
       <!-- Contact -->
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -1371,6 +1392,80 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Footer nav row -->
+      <div class="footer__nav-container">
+        <!-- Inner -->
+        <navbar class="navbar">
+          <!-- Logo block -->
+          <div class="footer__nav">
+            <a href="#" class="logo-block footer__logo-block">
+              <!-- Logo-image block -->
+              <div class="logo__img-block">
+                <img src="./assets/img/logo.svg" alt="Arif" class="logo__img" />
+              </div>
+
+              <!-- Logo-name block -->
+              <div class="logo__name-block">hi@arif.interactive</div>
+            </a>
+
+            <!-- Emoji -->
+            <div class="header__emoji-block footer__emoji-block">
+              <img
+                src="./assets/img/header-01.png"
+                alt=""
+                class="header__emoji"
+              />
+            </div>
+
+            <!-- Navbar list -->
+            <ul id="pc-nav" class="navbar__list footer__list">
+              <li>
+                <a href="#work" class="navbar__link footer__link">Projects</a>
+              </li>
+              <li>
+                <a href="#journey" class="navbar__link footer__link">Journey</a>
+              </li>
+              <li>
+                <a href="#service" class="navbar__link footer__link">Service</a>
+              </li>
+              <li>
+                <a href="#contact" class="navbar__link footer__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </navbar>
+      </div>
+
+      <!-- Seperate line -->
+      <div class="footer__line"></div>
+
+      <!-- Footer copyright -->
+      <div class="footer__copyright-block">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <!-- Start from here -->
+              <div class="footer__copyright--inner">
+                <!-- Copy right -->
+                <span class="footer__copyright">
+                  ©interactiveArif 2021. All rights reserved.
+                </span>
+
+                <!-- Privacy block -->
+                <div class="footer-privacy">
+                  <a href="#!" class="footer__privacy">Privacy Policy</a>
+                  <span class="footer-privacy__seperate"></span>
+                  <a href="#!" class="footer__privacy">Terms of Conditions</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script>
     const pcNav = document.querySelector("#pc-nav");
