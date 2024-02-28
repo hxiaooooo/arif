@@ -79,7 +79,7 @@
 }
 
 .faq__label::after {
-  content: "-";
+  content: "+";
 
   position: absolute;
   right: 50%;
@@ -114,7 +114,7 @@
 }
 
 .faq-item:has(.faq-checkbox:checked) .faq__label::after {
-  content: "+";
+  content: "-";
 }
 
 .faq-item:has(.faq-checkbox:checked) {
